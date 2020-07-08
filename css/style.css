@@ -1,103 +1,121 @@
-*{
-    box-sizing: border-box;
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(142, 42, 71, 1) 35%, rgba(0, 212, 255, 1) 100%);
+
+
 }
 
-body{
-    background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(142,42,71,1) 35%, rgba(0,212,255,1) 100%);
+
+.mt-5 {
+    margin-top: 5px;
 }
 
-.bg-white{
+.bg-white {
     background-color: white;
     padding-bottom: 40px;
+
+    border-radius: 0 0 25px 25px;
 }
 
-main{
+main {
     margin: 20px;
 }
 
-.wrapper{
+.wrapper {
     width: 70%;
     margin: 0 auto;
 }
 
-.flex{
+.flex {
     display: flex;
-
-    
+    flex-wrap: wrap;
 }
 
 
-.center{
+.center {
     justify-content: center;
     width: 100%;
 }
 
-.column{
+.column {
     flex-direction: column;
 }
 
-.row{
+.row {
     flex-direction: row;
 }
 
-.block{
+.block {
     display: block;
 }
 
-.title{
+.title {
     color: white;
     background-color: black;
-    padding: 10px;
+    border-radius: 25px 25px 0 0;
+
 }
 
-a{
+a {
     padding: 20px;
     background-color: red;
     color: white;
     text-decoration: none;
     border-radius: 10px;
-    
+
 }
 
-label:not(:last-child):after{
+label {
     color: lightgrey;
     margin-left: 10px;
 }
 
-input{
+label[name=male],
+label[name=female] {
+    color: black;
+}
+
+input {
     background-color: lightgrey;
     border: none;
-    padding:10px 10px;
+    padding: 10px 10px;
     border-radius: 10px;
 }
 
-input[name=name], input[name=last_name], input[name=phone]{
+input[name=name],
+input[name=last_name],
+input[name=phone] {
     display: block;
     margin-left: 10px;
     margin-top: 20px;
-    width: 50vh;
-   
+    width: 90%;
+
 }
 
-input[name=code], select{
+input[name=code],
+select {
     display: block;
     margin-left: 10px;
     margin-top: 20px;
     width: 20vh;
 }
 
-input[name=email], input[name=company]{
+input[name=email],
+input[name=company] {
     display: block;
     margin-left: 10px;
     margin-top: 20px;
     width: 100vh;
-    box-sizing: border-box;
 }
 
-input[type=radio]{
+input[type=radio] {
     margin-bottom: 30px;
 }
 
+.half {
+    flex: 1;
+}
 
-
+input[type=radio] {
+    margin-left: 5px;
+}
