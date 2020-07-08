@@ -83,13 +83,19 @@ input {
 }
 
 input[name=name],
-input[name=last_name],
-input[name=phone] {
+input[name=last_name] {
     display: block;
     margin-left: 10px;
     margin-top: 20px;
     width: 90%;
 
+}
+
+input[name=phone]{
+    display: block;
+    
+    margin-top: 20px;
+    width: 45vh;
 }
 
 input[name=code],
