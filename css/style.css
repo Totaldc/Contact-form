@@ -1,3 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(142,42,71,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.bg-white{
+    background-color: white;
+    padding-bottom: 40px;
+}
 
 main{
     margin: 20px;
@@ -10,14 +23,26 @@ main{
 
 .flex{
     display: flex;
+
+    
 }
+
 
 .center{
     justify-content: center;
+    width: 100%;
 }
 
 .column{
     flex-direction: column;
+}
+
+.row{
+    flex-direction: row;
+}
+
+.block{
+    display: block;
 }
 
 .title{
@@ -31,4 +56,48 @@ a{
     background-color: red;
     color: white;
     text-decoration: none;
+    border-radius: 10px;
+    
 }
+
+label:not(:last-child):after{
+    color: lightgrey;
+    margin-left: 10px;
+}
+
+input{
+    background-color: lightgrey;
+    border: none;
+    padding:10px 10px;
+    border-radius: 10px;
+}
+
+input[name=name], input[name=last_name], input[name=phone]{
+    display: block;
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 50vh;
+   
+}
+
+input[name=code], select{
+    display: block;
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 20vh;
+}
+
+input[name=email], input[name=company]{
+    display: block;
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 100vh;
+    box-sizing: border-box;
+}
+
+input[type=radio]{
+    margin-bottom: 30px;
+}
+
+
+
